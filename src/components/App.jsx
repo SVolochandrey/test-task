@@ -1,9 +1,9 @@
 import { lazy } from "react";
 import { Navigate, Routes, Route } from "react-router-dom";
-import SharedLayout from "./components/SharedLayout";
+import SharedLayout from "./SharedLayout";
 
-const HomePage = lazy(() => import("./pages/HomePage"));
-const CardsPage = lazy(() => import("./pages/CardsPage"));
+const HomePage = lazy(() => import("pages/HomePage"));
+const CardsPage = lazy(() => import("pages/CardsPage"));
 
 export const App = () => {
   return (
@@ -16,5 +16,3 @@ export const App = () => {
     </Routes>
   );
 };
-
-export default App;
